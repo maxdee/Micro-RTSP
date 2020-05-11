@@ -223,7 +223,7 @@ bool CStreamer::handleRequests(uint32_t readTimeoutMs)
 
         element = element->m_Next;
 
-        if (session->m_stopped) 
+        if (session->m_stopped)
         {
             // remove session here, so we wont have to send to it
             delete session;

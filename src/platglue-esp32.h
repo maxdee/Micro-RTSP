@@ -1,8 +1,8 @@
 #pragma once
 
 #include <Arduino.h>
-#include <WiFiClient.h>
-#include <WiFiUdp.h>
+#include <Ethernet.h>
+#include <EthernetUdp.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 //#include <arpa/inet.h>
@@ -14,8 +14,8 @@
 #include <errno.h>
 
 
-typedef WiFiClient *SOCKET;
-typedef WiFiUDP *UDPSOCKET;
+typedef EthernetClient *SOCKET;
+typedef EthernetUDP *UDPSOCKET;
 typedef IPAddress IPADDRESS; // On linux use uint32_t in network byte order (per getpeername)
 typedef uint16_t IPPORT; // on linux use network byte order
 
